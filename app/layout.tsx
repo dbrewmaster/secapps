@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "SecureFlow",
-  description: "A simple security operations app built for effortless protection."
+  title: "ThreatMap",
+  description: "A real-time threat map for security operations teams."
 };
 
 export default function RootLayout({
@@ -15,26 +15,30 @@ export default function RootLayout({
       <body>
         <div className="page">
           <header className="header">
-            <div className="logo">SecureFlow</div>
+            <div>
+              <p className="logo">ThreatMap</p>
+              <span className="tagline">Security Operations Center</span>
+            </div>
             <nav className="nav">
-              <a href="#features">Features</a>
-              <a href="#workflow">Workflow</a>
-              <a href="#plans">Plans</a>
-              <a href="#contact">Contact</a>
+              <a href="#map">Threat map</a>
+              <a href="#feed">Response feed</a>
+              <a href="#layers">Defense layers</a>
             </nav>
-            <button className="primary">Request Demo</button>
+            <button className="primary">Create Alert</button>
           </header>
           {children}
           <footer className="footer">
             <div>
-              <strong>SecureFlow</strong>
-              <p>Made for teams that want security without friction.</p>
+              <strong>ThreatMap</strong>
+              <p className="muted">
+                Built for analysts who need instant visibility into global
+                threats.
+              </p>
             </div>
             <div className="footer-links">
-              <a href="#features">Features</a>
-              <a href="#workflow">Workflow</a>
-              <a href="#plans">Plans</a>
-              <a href="#contact">Contact</a>
+              <span>Data refresh: 15s</span>
+              <span>Coverage: Global</span>
+              <span>Uptime: 99.99%</span>
             </div>
           </footer>
         </div>
